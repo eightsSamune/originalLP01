@@ -1,0 +1,12 @@
+.sec01{
+    background-color: lightblue;
+
+    .giji{
+        &::after{
+            // content: "\f108"; 疑似要素だと使えないアイコンもある？
+            content: "\f164";
+            // font-weight: 400;
+            font-family: "Font Awesome 5 Free";
+        }
+    }
+}

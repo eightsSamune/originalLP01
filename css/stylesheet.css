@@ -1,1 +1,9 @@
-/* No CSS *//*# sourceMappingURL=stylesheet.css.map */
+.sec01 {
+  background-color: lightblue;
+}
+
+.sec01 .giji::after {
+  content: "\f164";
+  font-family: "Font Awesome 5 Free";
+}
+/*# sourceMappingURL=stylesheet.css.map */
