@@ -1,12 +1,178 @@
-.sec01{
-    background-color: lightblue;
+body{
+    max-width: 1920px;
 
-    .giji{
-        &::after{
-            // content: "\f108"; 疑似要素だと使えないアイコンもある？
-            content: "\f164";
-            // font-weight: 400;
-            font-family: "Font Awesome 5 Free";
+    font-family: "Arial";
+    text-align: center;
+
+    .container{
+        max-width: 1300px;
+        margin: 0 auto;
+
+        padding: 50px 0;
+    }
+
+    h1{
+        font-size: 152px;
+    }
+    h2{
+        font-size: 57px;
+    }
+    h3{
+        font-size: 36px;
+    }
+    p{
+        font-size: 15px;
+    }
+
+}
+
+header{
+    position: fixed;
+    top: 0px;
+
+    // 背景のみ透過
+    background-color: rgba(0, 0, 0, 0.5);
+
+    color: white;
+    
+    height: 90px;
+    width: 100%;
+
+    font-weight: bold;
+
+    .header_container{
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+    
+        .naviBar{
+            text-align: right;
+            display: flex;
+            align-items: center;
+            
+            a{
+                margin-right: 20px;
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+.sec01{
+    background-image: url(../images/main.png);
+    background-position: center;
+    background-size: cover;
+    max-height: 1080px;
+    min-height: 800px;
+
+    color: white;
+
+    .container{
+        padding: 200px 0;
+        font-weight: bold;
+
+        h1{
+            margin-bottom: 50px;
+        }
+        h3{
+            letter-spacing: 6px;
+            margin-bottom: 50px;
+        }
+
+        a{
+            background-color: lightblue;
+            
+            background: linear-gradient(to left, #0093E2,#00FFFF);
+
+            display: inline-block;
+
+            font-size: 36px;
+            letter-spacing: 10px;
+
+            border-radius: 50px;
+            width: 490px;
+            height: 90px;
+            line-height: 90px;
+
+            &:hover{
+                background: linear-gradient(to right, #018D8D,#035784);
+            }
+        }
+    }
+}
+
+.title{
+    font-weight: bold;
+    margin-bottom: 50px;
+    
+    text-decoration: underline;
+}
+
+.sec02{
+    .container{
+
+        .samuneList{
+            
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                li{
+                    width: 32%;
+                    background-color: #F1F9FF;
+                    border-radius: 10px;
+                    box-shadow: 3px 3px 3px lightgray;
+
+                    margin-bottom: 20px;
+                    
+                    img{
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                        width: 100%;
+                    }
+                    p{
+                        padding: 20px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bgGray{
+    background-color: #4A4A4A;
+    color: white;
+}
+
+.sec03{
+
+    .container{
+
+        .aboutWrapper{
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 45%;
+                height: 45%;
+            }
+            .textWrapper{
+                width: 45%;
+                margin-left: 20px;
+                
+                text-align: left;
+                font-weight: bold;
+
+                h3{
+                    font-size: 50px;
+                }
+                p{
+                    font-size: 30px;
+                }
+            }
+
         }
     }
 }
