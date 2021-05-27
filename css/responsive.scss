@@ -1,1 +1,95 @@
 
+// ■スマホ用サイズ
+@media (max-width:768px){
+
+    // スマホ用表示フラグ
+    .sp_only{
+        display: block;
+    }
+    .pc_only{
+        display: none;
+    }
+    
+
+    body{
+        h1{
+            font-size: 120px;
+        }
+        h2{
+            font-size: 35px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 10px;
+        }
+    
+        .container{
+            max-width: 740px;
+        }
+
+    }
+
+    header{
+
+        height: 100px;
+
+        .header_container{
+            .naviBar{
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .sec01{
+        .container{
+            padding-bottom: 100px;
+        }
+    }
+
+    .sec02{
+        .container{
+            .samuneList{
+                ul{
+                    li{
+                        width: 90%;
+
+                        p{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sec03{
+        .container{
+            .aboutWrapper{
+                flex-direction: column;
+                align-items: center;
+
+                img{
+                    width: 90%;
+                    height: 90%;
+                }
+                .textWrapper{
+                    width: 90%;
+                    margin: 20px;
+
+                    h3{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+    }
+
+}

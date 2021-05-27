@@ -1,1 +1,62 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media (max-width: 768px) {
+  .sp_only {
+    display: block;
+  }
+  .pc_only {
+    display: none;
+  }
+  body h1 {
+    font-size: 120px;
+  }
+  body h2 {
+    font-size: 35px;
+  }
+  body h3 {
+    font-size: 20px;
+  }
+  body p {
+    font-size: 10px;
+  }
+  body .container {
+    max-width: 740px;
+  }
+  header {
+    height: 100px;
+  }
+  header .header_container .naviBar a {
+    font-size: 20px;
+  }
+  .sec01 .container {
+    padding-bottom: 100px;
+  }
+  .sec02 .container .samuneList ul li {
+    width: 90%;
+  }
+  .sec02 .container .samuneList ul li p {
+    font-size: 30px;
+  }
+  .sec03 .container .aboutWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sec03 .container .aboutWrapper img {
+    width: 90%;
+    height: 90%;
+  }
+  .sec03 .container .aboutWrapper .textWrapper {
+    width: 90%;
+    margin: 20px;
+  }
+  .sec03 .container .aboutWrapper .textWrapper h3 {
+    font-size: 30px;
+  }
+  .sec03 .container .aboutWrapper .textWrapper p {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
