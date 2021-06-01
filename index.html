@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="エイトデザイン">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>エイトのLPコーディングポートフォリオ</title>
     <link rel="stylesheet" href="css/destyle.css">
@@ -17,13 +19,27 @@
         <div class="header_container">
           <h2>Eight's <br class="sp_only">Design</h2>
           
-          <div class="naviBar">
-            <a>PORTFOLIO</a>
-            <a>ABOUT</a>
-            <a>CONTACT</a>
+          <div class="pc_only">
+            <nav id="naviBar">
+              <a>PORTFOLIO</a>
+              <a>ABOUT</a>
+              <a>CONTACT</a>
+            </nav>
           </div>
-          
+          <div class="naviIcon sp_only">
+            <i class="fas fa-bars " id="drawer_toggle"></i>
+          </div>
         </div>
+
+        <nav id="global_nav" class="sp_only">
+          <ul>
+            <li><a>PORTFOLIO</a></li>
+            <li><a>ABOUT</a></li>
+            <li><a>CONTACT</a></li>
+          </ul>
+          
+        </nav>
+
       </header>
       
       <section class="sec01">
@@ -105,6 +121,18 @@
         <!-- <p>エイトのデザイン</p> -->
 
       </footer>
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script>
+        $(function(){
+          // 1. 上からスライド
+          $("#drawer_toggle").click(function(){
+          	$(this).toggleClass("open");
+          	$("#global_nav").slideToggle();
+          });
+          
+        });
+      </script>
 
       <script src="js/script.js"></script>
     </body>

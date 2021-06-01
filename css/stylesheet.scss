@@ -50,11 +50,13 @@ header{
     font-weight: bold;
 
     .header_container{
-        padding: 10px 20px;
+        padding: 0 20px;
         display: flex;
         justify-content: space-between;
     
-        .naviBar{
+        line-height: 90px;
+
+        #naviBar{
             text-align: right;
             display: flex;
             align-items: center;

@@ -45,16 +45,17 @@ header {
 }
 
 header .header_container {
-  padding: 10px 20px;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  line-height: 90px;
 }
 
-header .header_container .naviBar {
+header .header_container #naviBar {
   text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -64,7 +65,7 @@ header .header_container .naviBar {
           align-items: center;
 }
 
-header .header_container .naviBar a {
+header .header_container #naviBar a {
   margin-right: 20px;
   font-size: 30px;
 }

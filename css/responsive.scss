@@ -36,10 +36,28 @@
         height: 100px;
 
         .header_container{
-            .naviBar{
-                a{
-                    font-size: 20px;
-                }
+            h2{
+                padding-top: 10px;
+                line-height: 40px;
+            }
+            .naviIcon{
+                width: 100px;
+                font-size: 50px;
+                line-height: 100px;
+            }
+        }
+
+        #global_nav{
+            display: none;
+
+            width: 100%;
+            // 背景のみ透過
+            background-color: rgba(0, 0, 0, 0.5);
+    
+            a{
+                display: block;
+                padding: 30px 0;
+                font-size: 30px;
             }
         }
     }
