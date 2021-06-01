@@ -20,22 +20,26 @@
           <h2>Eight's <br class="sp_only">Design</h2>
           
           <div class="pc_only">
+            <!-- PC用メニュー -->
             <nav id="naviBar">
-              <a>PORTFOLIO</a>
-              <a>ABOUT</a>
-              <a>CONTACT</a>
+              <a class="headMenu" href="#portfolio">PORTFOLIO</a>
+              <a class="headMenu" href="#about">ABOUT</a>
+              <a class="headMenu" href="#contact">CONTACT</a>
             </nav>
           </div>
+
+          <!-- スマホ用メニューアイコン -->
           <div class="naviIcon sp_only">
-            <i class="fas fa-bars " id="drawer_toggle"></i>
+            <i class="fas fa-bars" id="drawer_toggle"></i>
           </div>
         </div>
 
+        <!-- スマホ用メニュー -->
         <nav id="global_nav" class="sp_only">
           <ul>
-            <li><a>PORTFOLIO</a></li>
-            <li><a>ABOUT</a></li>
-            <li><a>CONTACT</a></li>
+            <li><a class="headMenu" href="#portfolio">PORTFOLIO</a></li>
+            <li><a class="headMenu" href="#about">ABOUT</a></li>
+            <li><a class="headMenu" href="#contact">CONTACT</a></li>
           </ul>
           
         </nav>
@@ -51,7 +55,7 @@
         </div>
       </section>
 
-      <section class="sec02">
+      <section class="sec02" id="portfolio">
         <div class="container">
           <h2 class="title">PORTFOLIO</h2>
           
@@ -86,7 +90,7 @@
         </div>
       </section>
       
-      <section class="sec03 bgGray">
+      <section class="sec03 bgGray" id="about">
         <div class="container">
           <h2 class="title">ABOUT</h2>
           
@@ -104,7 +108,7 @@
 
       </section>
 
-      <section class="sec04">
+      <section class="sec04" id="contact">
         <div class="container">
           <h2 class="title">CONTACT</h2>
 
@@ -125,10 +129,23 @@
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
       <script>
         $(function(){
-          // 1. 上からスライド
+          // メニュー上からスライド
           $("#drawer_toggle").click(function(){
-          	$(this).toggleClass("open");
-          	$("#global_nav").slideToggle();
+
+            // ハンバーガーアイコン⇔バツアイコンの切り替え
+            if($(this).hasClass("fas fa-bars")){
+              $(this).removeClass("fas fa-bars");
+              $(this).toggleClass("fas fa-times");
+
+            }else{
+              $(this).removeClass("fas fa-times");
+              $(this).toggleClass("fas fa-bars");
+              
+            }
+
+            // 上からスライド
+            $("#global_nav").slideToggle();
+
           });
           
         });

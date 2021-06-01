@@ -67,6 +67,28 @@ header{
             }
         }
     }
+    
+    // メニューホバー下線アニメーション
+    .headMenu {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .headMenu::after {
+        position: absolute;
+        bottom: 23px;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: white;
+        transform: scale(0, 1);
+        transform-origin: center top;
+        transition: transform .3s;
+    }
+    .headMenu:hover::after {
+        transform: scale(1, 1);
+    }
 }
 
 .sec01{
