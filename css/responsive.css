@@ -82,5 +82,20 @@
   .sec03 .container .aboutWrapper .textWrapper p {
     font-size: 18px;
   }
+  .sec04 .container {
+    width: 300px;
+  }
+  .sec04 ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sec04 ul li + li {
+    margin-top: 30px;
+  }
 }
 /*# sourceMappingURL=responsive.css.map */

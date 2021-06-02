@@ -122,4 +122,19 @@
         }
     }
 
+    .sec04{
+        .container{
+            width: 300px;
+        }
+        ul{
+            flex-direction: column;
+            align-items: center;
+            // justify-content: space-between;
+
+            li + li{
+                margin-top: 30px;
+            }
+        }
+    }
+
 }
