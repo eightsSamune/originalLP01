@@ -49,11 +49,12 @@
         }
 
         #global_nav{
-            display: none;
 
             width: 100%;
             // 背景のみ透過
             background-color: rgba(0, 0, 0, 0.5);
+
+            z-index: 10;
     
             a{
                 display: block;

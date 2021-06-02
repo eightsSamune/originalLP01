@@ -226,7 +226,6 @@ header .headMenu:hover::after {
   text-decoration: none;
   text-align: center;
   position: relative;
-  z-index: 10;
   display: block;
   width: 150px;
   height: 150px;
@@ -258,6 +257,7 @@ header .headMenu:hover::after {
 }
 
 .sec04 .btnTw::before {
+  z-index: -1;
   font-family: "Font Awesome 5 Brands";
   content: "\f099";
 }
