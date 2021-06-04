@@ -9,7 +9,6 @@
     .pc_only{
         display: none;
     }
-    
 
     body{
         h1{
@@ -29,11 +28,9 @@
             max-width: 740px;
             min-width: 340px;
         }
-
     }
 
     header{
-
         height: 100px;
 
         .header_container{
@@ -49,8 +46,9 @@
         }
 
         #global_nav{
-
+            display: none;
             width: 100%;
+
             // 背景のみ透過
             background-color: rgba(0, 0, 0, 0.5);
 
@@ -130,7 +128,6 @@
         ul{
             flex-direction: column;
             align-items: center;
-            // justify-content: space-between;
 
             li + li{
                 margin-top: 30px;
@@ -138,4 +135,37 @@
         }
     }
 
+    #page_top{
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0.6;
+        border-radius: 50%;
+    }
+    #page_top a{
+        position: relative;
+        display: block;
+        width: 70px;
+        height: 68px;
+        text-decoration: none;
+    }
+    #page_top a::before{
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        content: '\f062';
+        font-size: 25px;
+        color: #fff;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+    }
 }

@@ -6,7 +6,6 @@
     display: block;
 }
 
-
 body{
     max-width: 1920px;
 
@@ -264,7 +263,6 @@ header{
     
     // ボタンアイコン
     .btnTw::before{
-        z-index: -1;
         font-family: "Font Awesome 5 Brands"; 
         content: "\f099";
     }

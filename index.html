@@ -118,19 +118,18 @@
               <li><a href="#" class="btn01 btnYt"></a></li>
               <li><a href="#" class="btn01 btnMl"></a></li>
             </ul>
-            
-            <!-- <img src="images/iconTwitter.png" alt="">
-            <img src="images/iconYouTube.png" alt="">
-            <img src="images/iconMail.png" alt=""> -->
           </div>
+
         </div>
 
       </section>
 
       <footer class="bgGray">
         <!-- <p>エイトのデザイン</p> -->
-
       </footer>
+
+
+      <div id="page_top"><a href="#"></a></div>
 
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
       <script>
@@ -151,9 +150,22 @@
 
             // 上からスライド
             $("#global_nav").slideToggle();
-
           });
           
+        });
+
+        // リンクのスムーススクロール
+        $(function(){
+          // #で始まるリンクをクリックしたら実行されます
+          $('a[href^="#"]').click(function() {
+            // スクロールの速度
+            let speed = 400; // ミリ秒で記述
+            let href= $(this).attr("href");
+            let target = $(href == "#" || href == "" ? 'html' : href);
+            let position = target.offset().top;
+            $('body,html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+          });
         });
       </script>
 
