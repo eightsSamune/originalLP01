@@ -8,7 +8,6 @@
 
 body {
   max-width: 1920px;
-  font-family: "Arial";
   text-align: center;
 }
 
@@ -20,18 +19,22 @@ body .container {
 
 body h1 {
   font-size: 152px;
+  font-family: 'Bebas Neue', cursive;
 }
 
 body h2 {
   font-size: 57px;
+  font-family: 'Bebas Neue', cursive;
 }
 
 body h3 {
   font-size: 36px;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 body p {
   font-size: 15px;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 header {
